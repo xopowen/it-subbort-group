@@ -1,0 +1,77 @@
+@import "burger";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.main-section{
+  background: url("../../../public/img/main_Section.jpg");
+  @apply bg-cover  ;
+  background-position-x: 75% ;
+  background-position-y:top ;
+  height: 2394px ;
+  @media (min-width: 1024px) {
+    height: 975px;
+    @apply bg-center;
+  }
+}
+
+.animation-default{
+  animation-duration:.3s ;
+  animation-fill-mode: both;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
+
+.appearanceY{
+  animation-name:appearanceY;
+@extend .animation-default
+}
+.appearanceX{
+  animation-name: appearanceX;
+  @extend .animation-default
+}
+.rotate180{
+  animation-name:rotate180;
+@extend .animation-default
+}
+.rotate180-reverse{
+  animation-name:rotate180-reverse;
+  @extend .animation-default
+}
+
+@keyframes rotate180-reverse {
+  0% {
+    transform: rotate(179deg);
+
+  }
+  100%{
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate180 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(179deg);
+  }
+}
+@keyframes appearanceY {
+   0% {
+    transform: translateY(-100%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+}
+@keyframes appearanceX{
+  0% {
+    transform: translateX(-100%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}

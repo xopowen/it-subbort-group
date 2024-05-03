@@ -1,7 +1,7 @@
+@import "style_zeroing.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,6 +16,10 @@
   }
 }
 
+.test:last-child:nth-child(4){
+  outline: 5px solid red;
+}
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -26,8 +30,17 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+section:not(:first-child) {
+padding-top: 250px;
+}
+section:last-child{
+  padding-bottom: 250px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
 }
+
+
