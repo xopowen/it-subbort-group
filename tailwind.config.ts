@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
   content: [
@@ -39,13 +40,65 @@ const config: Config = {
         "clamp-15-5-40":"clamp(15px,5vw,40px)"
       },
       fontSize:{
-        'clamp40-11-112':"clamp(40px,11vw,112px)"
+        'clamp40-11-112':"clamp(40px,11vw,112px)",
+        'clamp40-7-70':"clamp(40px,7vw,70px)"
       },
       borderRadius:{
         '70':'70px'
-      }
+      },
+      screens: {
+        'hover-none': {'raw': '(hover: none)'
+        }
+      },
+      textShadow: {
+        sm: '0 1px 2px var(--tw-shadow-color)',
+        DEFAULT: '0 2px 4px var(--tw-shadow-color)',
+        lg: '0 8px 16px var(--tw-shadow-color)',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+          {
+            'animate-duration': (value) => ({
+              animationDuration: value,
+            }),
+
+          },
+          { values: theme('transitionDuration') }
+      )
+    }),
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+          {
+            'animate-delay': (value) => ({
+              animationDelay: value,
+            }),
+          },
+          { values: theme('transitionDelay') }
+      )
+    }),
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+          {
+            'animate-count': (value) => ({
+              animationIterationCount: value,
+            }),
+          },
+          { values: Object.assign({},theme('zIndex') , {'infinite':'infinite'})  }
+      )
+    }),
+    plugin(function ({ matchUtilities, theme }) {
+      matchUtilities(
+          {
+            'text-shadow': (value) => ({
+              textShadow: value,
+            }),
+          },
+          { values: theme('textShadow') }
+      )
+    })
+  ],
 };
 export default config;

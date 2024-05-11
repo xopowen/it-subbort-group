@@ -3,42 +3,67 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities{
+  .main-section{
+    background: url("../../../public/img/main_Section.jpg");
+    @apply bg-cover  ;
+    background-position-x: 75% ;
+    background-position-y:top ;
+    height: 2394px ;
+    @media (min-width: 1024px) {
+      height: 975px;
+      @apply bg-center;
+    }
+  }
 
+  .animation-default{
+    animation-duration:.3s ;
+    animation-fill-mode: both;
+    animation-iteration-count: 1;
+    animation-play-state: running;
+  }
 
-.main-section{
-  background: url("../../../public/img/main_Section.jpg");
-  @apply bg-cover  ;
-  background-position-x: 75% ;
-  background-position-y:top ;
-  height: 2394px ;
-  @media (min-width: 1024px) {
-    height: 975px;
-    @apply bg-center;
+  .appearanceY{
+    animation-name:appearanceY;
+    @extend .animation-default
+  }
+  .appearanceX{
+    animation-name: appearanceX;
+    @extend .animation-default;
+  }
+  .rotate180{
+    animation-name:rotate180;
+    @extend .animation-default;
+  }
+  .rotate180-reverse{
+    animation-name:rotate180-reverse;
+    @extend .animation-default
+  }
+  .scaleCenterAppearance{
+    @extend .animation-default;
+    animation-name:scaleCenterAppearance ;
+    animation-timing-function: ease-in-out;
+  }
+
+  .outlineAppearance7-5{
+    @extend .animation-default;
+    animation-name:outlineAppearance7-5 ;
+  }
+  .option-appearance{
+    animation-name: optionAppearance ;
+    @extend .animation-default;
+
   }
 }
 
-.animation-default{
-  animation-duration:.3s ;
-  animation-fill-mode: both;
-  animation-iteration-count: 1;
-  animation-play-state: running;
-}
 
-.appearanceY{
-  animation-name:appearanceY;
-@extend .animation-default
-}
-.appearanceX{
-  animation-name: appearanceX;
-  @extend .animation-default
-}
-.rotate180{
-  animation-name:rotate180;
-@extend .animation-default
-}
-.rotate180-reverse{
-  animation-name:rotate180-reverse;
-  @extend .animation-default
+@keyframes optionAppearance  {
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
 }
 
 @keyframes rotate180-reverse {
@@ -49,6 +74,17 @@
   100%{
     transform: rotate(0deg);
   }
+}
+
+
+@keyframes outlineAppearance7-5 {
+  from{
+    outline-width:0;
+  }
+  to{
+    outline-width:7.5px ;
+  }
+
 }
 
 @keyframes rotate180 {
@@ -73,5 +109,14 @@
   }
   100%{
     transform: translateX(0%);
+  }
+}
+
+@keyframes scaleCenterAppearance {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
   }
 }

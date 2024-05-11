@@ -1,6 +1,5 @@
 export default function ButtonRounded({text}:{text:string}){
 
-    // @ts-ignore
     return <button className={`uppercase text-4xl
         size-72
         text-center

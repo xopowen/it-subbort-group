@@ -16,31 +16,38 @@
   }
 }
 
-.test:last-child:nth-child(4){
-  outline: 5px solid red;
-}
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+
 }
 
 section:not(:first-child) {
-padding-top: 250px;
+  padding-top: 250px;
 }
 section:last-child{
   padding-bottom: 250px;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .border-left:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    border-left: 3px solid;
+    height: 100%;
   }
+ @media (max-width:1024px) {
+   .border-up:before{
+     content: '';
+     position: absolute;
+     border-top: 3px solid ;
+     top: 0;
+     width: 100%;
+     @apply top-0 w-full ;
+   }
+ }
+
 }
 
 

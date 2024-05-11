@@ -42,10 +42,10 @@ const listGout:Array<{index?:number,hText:string,text?:string,linkImg?:any}> = [
 // ${!isOdd && listGout ?'  lg:[&:nth-last-child(1)]:col-start-5 lg:[&:nth-last-child(2)]:col-start-3 ':''}
 
 export default function OurGoal(){
-    return <Section hText={'Why choose us?'}>
+    return <Section hText={'What are our goals?'}>
             <div className='grid justify-end grid-cols-6 gap-0 p-1'>
                 {listGout.map((el,index)=>{
-                    return <div key={index} className={`lg:col-span-2 test
+                    return <div key={index} className={`lg:col-span-2  h-full
                     lg:[&:nth-child(4n)]:col-span-3  lg:[&:last-child:nth-child(4n)]:col-start-4
                     lg:[&:nth-child(5n)]:col-span-3  
                      lg:[&:last-child:nth-child(6n)]:col-start-5
