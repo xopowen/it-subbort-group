@@ -7,7 +7,7 @@ export default function Section({hText,
 {
 
 
-    return <section className='flex flex-col gap-24 container mx-auto'>
+    return <section className='flex flex-col px-8 gap-24 container mx-auto'>
         <h2 className='font-main text-6xl text-black  '>{hText}</h2>
         <div className=''>
             {children}

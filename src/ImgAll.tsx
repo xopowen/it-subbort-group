@@ -5,4 +5,5 @@ import blog5 from '../public/img/Block_5.jpg'
 import blog6 from '../public/img/Block_6.jpg'
 import IconJS from '../public/svg/Icon_JS_able.svg'
 import IconLogistics from '../public/svg/logistics_icon.svg'
-export {Logo,Burger,blog1,blog6,blog5,IconJS,IconLogistics}
+import directInbox from '../public/svg/direct-inbox.svg'
+export {Logo,Burger,blog1,blog6,blog5,IconJS,IconLogistics,directInbox}

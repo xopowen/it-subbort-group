@@ -6,6 +6,7 @@ import {WhyChooseUs} from "@/app/ui/sections/WhyChooseUs";
 import HowWeWork from "@/app/ui/sections/HowWeWork";
 import UsedTech from "@/app/ui/sections/UsedTech";
 import Industries from "@/app/ui/sections/Industries";
+import GetTouchWithUs from "@/app/ui/sections/GetTouchWithUs";
 export default function Home() {
   return (
     <main className={'flex flex-col  '}>
@@ -15,6 +16,7 @@ export default function Home() {
         <HowWeWork/>
         <UsedTech/>
         <Industries/>
+        <GetTouchWithUs/>
     </main>
   );
 }
