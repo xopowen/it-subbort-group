@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import '@/app/scss/main.scss';
 import '@/app/globals.css';
 import Header from "@/app/ui/Header";
+import Footer from "@/app/ui/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +22,7 @@ export default function RootLayout({
       <body  className='max-w-[1920px] relative  mx-auto overflow-x-hidden'>
       <Header/>
       {children}
+      <Footer/>
       </body>
     </html>
   );
