@@ -29,10 +29,10 @@ export default function Header(){
     },[])
 
 
-    return (<header className={`flex max-w-[1920px] fixed w-fill-vw px-clamp-15-5-40 justify-between z-10 m-0 pt-24
+    return (<header className={`flex max-w-[1920px] fixed w-fill-vw px-clamp-15-5-40 justify-between z-10 m-0 
                 lg:py-0 lg:border-b lg:border-white lg:border-solid lg:gap-clamp-30-80
                 transform transition
-                ${showHover?' bg-gray-600 hover-none:-translate-y-0 -translate-y-3/4 hover:-translate-y-0':''}
+                ${showHover?' pt-8 bg-gray-600 hover-none:-translate-y-0 -translate-y-3/4 hover:-translate-y-0':'pt-24'}
     `}>
         <div className='pb-7 order-2 lg:order-1 lg:my-5'>
             <svg className={'uppercase font-bold max-w-96  lg:max-w-52 h-auto  w-full'}
