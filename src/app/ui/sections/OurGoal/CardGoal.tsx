@@ -4,12 +4,12 @@ export default function CardGoal({index,hText,text,linkImg}:{index?:number,hText
 
 
     if(linkImg){
-        return <article className='border border-gray-500 overflow-hidden rounded-70 h-full'>
+        return <article className='border border-gray-500 overflow-hidden    rounded-70 h-full'>
             <Image height={683} width={715} className='font-main text-4xl font-medium w-full h-full' src={linkImg} alt={hText}/>
         </article>
     }
 
-    return <article className='border border-gray-500 rounded-70 p-clamp-30-80
+    return <article className='border border-gray-500 rounded-3xl md:rounded-70 p-clamp-30-80
     h-full
     flex flex-col justify-between gap-12 lg:6
     '>

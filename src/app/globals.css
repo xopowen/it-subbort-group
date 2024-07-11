@@ -22,11 +22,28 @@ body {
 
 }
 
+
+
 section:not(:first-child) {
-  padding-top: 250px;
+  @apply pt-24
+}
+section:not(:first-child) {
+    @apply pt-24
 }
 section:last-child{
-  padding-bottom: 250px;
+  @apply pb-24
+}
+
+@media (screen(lg)) {
+  section:not(:first-child) {
+    @apply pt-64
+  }
+  section:not(:first-child) {
+    @apply pt-64
+  }
+  section:last-child{
+    @apply pb-64
+  }
 }
 
 @layer utilities {

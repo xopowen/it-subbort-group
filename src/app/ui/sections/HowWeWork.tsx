@@ -19,7 +19,7 @@ const listCardHowWeWork:Array<HowWeWorkCard> = [
 function HowWeWork() {
     return (
         <Section hText={'How we work?'}>
-           <div className='grid grid-cols-6 pb-12 lg:pb-2   '>
+           <div className='grid grid-cols-6 gap-8  pb-12 lg:pb-2   '>
                {listCardHowWeWork && listCardHowWeWork.map((el,index)=>{
                    return <HWCard description={el.description} head={el.head} key = {index}/>
                })

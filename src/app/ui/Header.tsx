@@ -32,7 +32,7 @@ export default function Header(){
     return (<header className={`flex max-w-[1920px] fixed w-fill-vw px-clamp-15-5-40 justify-between z-10 m-0 
                 lg:py-0 lg:border-b lg:border-white lg:border-solid lg:gap-clamp-30-80
                 transform transition
-                ${showHover?' pt-8 bg-gray-600 hover-none:-translate-y-0 -translate-y-3/4 hover:-translate-y-0':'pt-24'}
+                ${showHover?' pt-8 bg-gray-600 hover-none:-translate-y-0 -translate-y-3/4 hover:-translate-y-0':'pt-8'}
     `}>
         <div className='pb-7 order-2 lg:order-1 lg:my-5'>
             <svg className={'uppercase font-bold max-w-96  lg:max-w-52 h-auto  w-full'}
@@ -80,6 +80,8 @@ export default function Header(){
                 ' hidden' +
                 ' group-[:has(input:checked)]:h-[100vh] w-full' +
                 ' group-[:has(input:checked)]:flex ' +
+                "group-[:has(input:checked)]:gap-3 "+
+                "group-[:has(input:checked)]:uppercase"+
                 ' lg:group-[:has(input:checked)]:flex' +
                 ' lg:flex ' +
                 ' lg:justify-end ' +
@@ -95,9 +97,9 @@ export default function Header(){
                 ' lg:px-clamp-30-80'
             }>
                 <li className='lg:hidden self-end p-10'>
-                    <button className={'dark:bg-white bg-blue-800 rounded-3xl p-0 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200'} aria-label="burger">
+                    <button className={'w-10 h-10 dark:bg-white bg-blue-800 rounded-3xl p-0 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200'} aria-label="burger">
                         <label htmlFor={'burger-menu'} >
-                            <svg className='w-28 h-28' fill="none" height="800px" width="800px" version="1.1" id="Capa_1"
+                            <svg className='max-w-full max-h-full object-contain' fill="none" height="800px" width="800px" version="1.1" id="Capa_1"
                                  viewBox="0 0 460.775 460.775"  >
 <path  className={'dark:fill-blue-800 fill-white'} d="M285.08,230.397L456.218,59.27c6.076-6.077,6.076-15.911,0-21.986L423.511,4.565c-2.913-2.911-6.866-4.55-10.992-4.55
 	c-4.127,0-8.08,1.639-10.993,4.55l-171.138,171.14L59.25,4.565c-2.913-2.911-6.866-4.55-10.993-4.55

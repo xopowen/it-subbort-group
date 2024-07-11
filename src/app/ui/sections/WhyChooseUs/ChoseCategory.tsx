@@ -30,7 +30,7 @@ export default function ChoseCategory(){
         setCategory(id)
     }
 
-    return <div className=' flex lg:flex-row flex-col  gap-36  lg:gap-48'>
+    return <div className=' flex lg:flex-row flex-col gap-8  md:gap-36  lg:gap-48'>
             <ControllerChoseCategory listCategory={lCategory} haveCategory={haveCategory} activeID ={categoryID}/>
         {!Number.isNaN(categoryID) &&   <CategoryCard key={categoryID} hText={ lCategory.find((el)=>el.id===categoryID)?.head+''} text={`
         A small text describing one of the goals in two lines. A small text describing one of the goals in two lines. A small text describing one of the goals in two lines. A small text describing one of the goals in two lines. A small text describing one of the goals in two lines. A small text describing one of the goals in two lines. A small text describing one of the goals in two lines. A small text describing one of the goals in two lines.
