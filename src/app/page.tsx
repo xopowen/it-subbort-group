@@ -9,7 +9,7 @@ import Industries from "@/app/ui/sections/Industries";
 import GetTouchWithUs from "@/app/ui/sections/GetTouchWithUs";
 export default function Home() {
   return (
-    <main className={'flex flex-col  '}>
+    <main className={'flex flex-col  overflow-x-hidden'}>
         <MainStart/>
         <OurGoal/>
         <WhyChooseUs/>
