@@ -1,11 +1,12 @@
-import Image from "next/image";
+// import Image from "next/image";
+import Picture from 'next-export-optimize-images/picture';
 
 export default function CardGoal({index,hText,text,linkImg}:{index?:number,hText:string,text?:string,linkImg?:string}){
 
 
     if(linkImg){
         return <article className='border border-gray-500 overflow-hidden    rounded-70 h-full'>
-            <Image height={683} width={715} className='font-main text-4xl font-medium w-full h-full' src={linkImg} alt={hText}/>
+            <Picture height={683} width={715} className='font-main text-4xl font-medium w-full h-full' src={linkImg} alt={hText}/>
         </article>
     }
 

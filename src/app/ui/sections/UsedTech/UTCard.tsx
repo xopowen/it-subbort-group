@@ -1,6 +1,7 @@
 import React from 'react';
 import {UTCardProps} from "@/app/ui/sections/UsedTech";
-import Image from 'next/image'
+// import Image from 'next/image';
+import Picture from 'next-export-optimize-images/picture';
 import {IconJS} from "@/ImgAll";
 
 
@@ -32,13 +33,13 @@ function UTCard({title,isAction,haveAction,id}:UTCardProps & {isAction:boolean,h
             <h4 className={`leading-snug  font-second font-normal pl-16 lg:pl-0 lg:pt-10  ${isAction?' text-black text-2xl':'text-gray-400 text-lg'}`}>
                 {title}
             </h4>
-            {isAction && <Image className='
+            {isAction && <Picture className='
             lg:absolute
             ml-16
             lg:ml-0
             -bottom-full
             duration-300
-            option-appearance' alt={''} src={IconJS} width={80} height={80}></Image>}
+            option-appearance' alt={''} src={IconJS} width={80} height={80}></Picture>}
         </article>
     );
 }

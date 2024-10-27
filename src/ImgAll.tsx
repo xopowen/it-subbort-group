@@ -10,6 +10,8 @@ import faceBook from '../public/svg/facebook.svg'
 import insta from '../public/svg/insta.svg'
 import InSvg from '../public/svg/in.svg'
 import vaber from '../public/svg/vaber.svg'
+import imgMainSection from '../public/img/main_Section.webp'
 export {Logo,Burger,blog1,blog6,blog5,IconJS,IconLogistics,directInbox
-,faceBook,insta,InSvg,vaber
+,faceBook,insta,InSvg,vaber,
+    imgMainSection
 }

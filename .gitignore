@@ -36,3 +36,5 @@ next-env.d.ts
 .gitignore
 .docker-compose.yml
 !/.nojekyll
+!/env.production
+/env.production

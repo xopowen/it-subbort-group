@@ -1,7 +1,8 @@
+import Picture from 'next-export-optimize-images/picture';
 
 import Section from "@/components/Section";
 import ICard from "@/app/ui/sections/Industries/ICard";
-import Image from "next/image";
+// import Image from "next/image";
 import {IconLogistics} from "@/ImgAll";
 const text = 'Fill the gaps in your competencies by setting up a remote IT team. We will find the best experts for you and arrange everything around it. You will get a perfect match both in skills and cultural fit.'
 function Industries() {
@@ -9,7 +10,7 @@ function Industries() {
         <Section hText={'Industries'}>
             <div className='flex flex-col  lg:flex-row gap-12'>
                 <ICard text={text} head={'Logistics'} >
-                    <Image src={IconLogistics} width={'100'} height={'100'}
+                    <Picture src={IconLogistics} width={'100'} height={'100'}
                            className={'w-full h-full animate-spin  ease-in'}
                            alt={''}/>
                 </ICard>

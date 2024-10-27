@@ -1,6 +1,7 @@
 import React from 'react';
 import BtnContactUs from "@/app/ui/BtnContactUs";
-import Image from "next/image";
+// import Image from "next/image";
+import Picture from 'next-export-optimize-images/picture';
 import {vaber,insta,InSvg,faceBook} from "@/ImgAll";
 
 function Footer() {
@@ -25,10 +26,10 @@ function Footer() {
                     </div>
                     <div className='grid gap-12'>
                         <div className='flex gap-2'>
-                            <a href="#"><Image src={vaber} className='w-full h-full cursor-pointer' width={60} height={60}   alt=''/></a>
-                            <a href="#"><Image src={insta} className='w-full h-full cursor-pointer' width={60} height={60} alt=""/></a>
-                            <a href="#"><Image src={InSvg} className='w-full h-full cursor-pointer' width={60} height={60} alt=""/></a>
-                            <a href="#"><Image src={faceBook} className='w-full h-full cursor-pointer' width={60} height={60} alt=""/></a>
+                            <a href="#"><Picture src={vaber} className='w-full h-full cursor-pointer' width={60} height={60}   alt=''/></a>
+                            <a href="#"><Picture src={insta} className='w-full h-full cursor-pointer' width={60} height={60} alt=""/></a>
+                            <a href="#"><Picture src={InSvg} className='w-full h-full cursor-pointer' width={60} height={60} alt=""/></a>
+                            <a href="#"><Picture src={faceBook} className='w-full h-full cursor-pointer' width={60} height={60} alt=""/></a>
                         </div>
                         <div className='flex  items-center'>
                             <BtnContactUs/>

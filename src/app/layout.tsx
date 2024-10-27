@@ -4,7 +4,6 @@ import '@/app/scss/main.scss';
 import '@/app/globals.css';
 import Header from "@/app/ui/Header";
 import Footer from "@/app/ui/Footer";
-
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {

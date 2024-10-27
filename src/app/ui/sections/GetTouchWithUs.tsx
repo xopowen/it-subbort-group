@@ -1,8 +1,8 @@
 'use client'
 import '@/app/globals.css'
-
+import Picture from 'next-export-optimize-images/picture';
 import React from 'react';
-import Image from "next/image";
+// import Image from "next/image";
 import {directInbox} from '../../../ImgAll'
 import InputWithNumberMask from "@/components/InputWithNumberMask";
 function GetTouchWithUs() {
@@ -21,7 +21,7 @@ function GetTouchWithUs() {
                         <a  download={true} tabIndex={0} aria-label="Download the brief">
                             <button className='flex gap-3 border border-white rounded-2xl transition transform active:scale-110 hover:scale-110 px-10 py-4 bg-transparent'>
                                 Download the brief
-                                <Image src={directInbox} alt=""/>
+                                <Picture src={directInbox} alt=""/>
                             </button>
                         </a>
                     </div>

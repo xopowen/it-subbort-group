@@ -1,6 +1,6 @@
 'use client'
 
-import React, {LegacyRef, useEffect, useRef} from 'react';
+import React, { useEffect, useRef} from 'react';
 import TellNumberMask from "@/functions/TellNumberMask";
 
 function InputWithNumberMask(props: React.DetailedHTMLProps<React.InputHTMLAttributes<HTMLInputElement>, HTMLInputElement>) {

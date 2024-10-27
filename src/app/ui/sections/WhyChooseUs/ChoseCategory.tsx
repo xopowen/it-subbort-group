@@ -1,7 +1,6 @@
 'use client'
 import {useState} from "react";
 import ControllerChoseCategory from "@/app/ui/sections/WhyChooseUs/ControlerChoseCategory";
-import {number} from "prop-types";
 import CategoryCard from "@/app/ui/sections/WhyChooseUs/CategoryCard";
 
 export type categoryForWhyChoseUs ={id:number,head:string}
