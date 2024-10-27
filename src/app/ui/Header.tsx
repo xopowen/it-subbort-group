@@ -9,7 +9,7 @@ export default function Header(){
     let [showHover,setShowHover] = useState<boolean>(false)
     let scrollEffect = useCallback(()=>{
 
-     if(   window.scrollY >850){
+     if(   window.scrollY >150){
          setShowHover(true)
      }else {
          setShowHover(false)
@@ -34,7 +34,7 @@ export default function Header(){
                 transform transition
                 ${showHover?' pt-8 bg-gray-600 hover-none:-translate-y-0 -translate-y-3/4 hover:-translate-y-0':'pt-8'}
     `}>
-        <div className='pb-7 order-2 lg:order-1 lg:my-5'>
+        <div className='pb-7 px-8 lg:px-0 order-2 lg:order-1 lg:my-5'>
             <svg className={'uppercase font-bold max-w-96  lg:max-w-52 h-auto  w-full'}
                  width="350"
                  height="117"

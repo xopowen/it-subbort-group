@@ -5,18 +5,21 @@
 
 @layer utilities{
   .main-section{
-    background: url("../../../public/img/main_Section.jpg") no-repeat;
-    @apply bg-cover  ;
+
+    @apply bg-cover  bg-gray-600;
     background-position-x: 75% ;
     background-position-y:top ;
-    height: 2394px ;
+    height: 975px;
     @media (min-width: 1024px) {
-      height: 975px;
-      @apply bg-center;
+
+      height: 2394px ;
+      background: url("../../../public/img/main_Section.jpg") no-repeat;
+      @apply bg-center ;
+      @supports (-webkit-appearance:none) {
+        background: url("../../../public/img/main_Section.webp") no-repeat;
+      }
     }
-    @supports (-webkit-appearance:none) {
-      background: url("../../../public/img/main_Section.webp") no-repeat;
-    }
+
   }
 
   .animation-default{
