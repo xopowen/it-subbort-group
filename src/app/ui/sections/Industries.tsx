@@ -11,7 +11,7 @@ function Industries() {
             <div className='flex flex-col  lg:flex-row gap-12'>
                 <ICard text={text} head={'Logistics'} >
                     <Picture src={IconLogistics} width={'100'} height={'100'}
-                           className={'w-full h-full '}//animate-spin  ease-in
+                           className={'w-full h-full animate-spin  ease-in'}
                            alt={''}/>
                 </ICard>
                 <ICard text={text} head={'E-commerce'}>
