@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build ",
-    "build_min_img": "next build && next-export-optimize-images",
+    "build_min_img": "next-export-optimize-images",
+    "build_export": "cross-env-shell MODE_BUILD=export npm run build ; npm run build_min_img",
     "start": "next start",
     "lint": "next lint"
   },
@@ -14,16 +15,16 @@
     "react": "^18",
     "react-dom": "^18",
     "react-intersection-observer": "^9.10.2"
-  
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
-   "next-export-optimize-images": "^4.5.1",
     "autoprefixer": "^10.0.1",
+    "cross-env": "^7.0.3",
     "eslint": "^8",
     "eslint-config-next": "14.1.4",
+    "next-export-optimize-images": "^4.5.1",
     "postcss": "^8",
     "sass": "^1.75.0",
     "tailwindcss": "^3.3.0",

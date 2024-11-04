@@ -28,9 +28,6 @@ const listUTCard:Array<UTCardProps> =[{
 },{
     id:7,
     title:' technology description'
-},{
-    id:8,
-    title:' technology description'
 }
 
 ]

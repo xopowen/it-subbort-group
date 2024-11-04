@@ -25,7 +25,7 @@ function HowWeWork() {
                })
                }
            </div>
-            <div>
+            <div className={'flex justify-center sm:justify-start'}>
                 <ButtonRounded text={'Learn more'}/>
             </div>
         </Section>

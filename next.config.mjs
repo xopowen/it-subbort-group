@@ -3,7 +3,8 @@ import withExportImages  from 'next-export-optimize-images'
 let nextConfig = {
 
 };
-if(process.env.NODE_ENV === 'production'){
+console.log(process.env.MODE_BUILD)
+if(process.env.MODE_BUILD === 'export'){
     nextConfig = withExportImages({
 
         images:{

@@ -9,10 +9,11 @@
     @apply bg-cover  bg-gray-600;
     background-position-x: 75% ;
     background-position-y:top ;
-    height: 975px;
+    //height: 1024px;
+
     @media (min-width: 1024px) {
 
-      height: 2394px ;
+      //height: 2394px ;
       background: url("../../../public/img/main_Section.jpg") no-repeat;
       @apply bg-center ;
       @supports (-webkit-appearance:none) {

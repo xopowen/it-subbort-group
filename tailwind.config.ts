@@ -38,11 +38,11 @@ const config: Config = {
       padding:{
         "clamp-30-80":"clamp(30px,4.1vw,80px)",
         "clamp-15-5-40":"clamp(15px,5vw,40px)",
-        "clamp-30-6-120":"clamp(15px,6vw,120px)",
-        "clamp-30-6-100":"clamp(15px,6vw,100px)",
+        "clamp-30-6-120":"clamp(30px,6vw,120px)",
+        "clamp-30-6-100":"clamp(30px,6vw,100px)",
       },
       fontSize:{
-        'clamp40-11-112':"clamp(40px,11vw,112px)",
+        'clamp40-11-112':"clamp(40px,11vw,96px)",
         'clamp40-7-70':"clamp(40px,7vw,70px)"
       },
       borderRadius:{

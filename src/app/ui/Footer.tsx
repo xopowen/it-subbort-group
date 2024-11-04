@@ -7,7 +7,7 @@ import {vaber,insta,InSvg,faceBook} from "@/ImgAll";
 function Footer() {
     return (
         <footer className='  max-w-[1920px]  w-fill-vw px-clamp-15-5-40 '>
-            <div className='flex flex-col py-clamp-15-5-40  gap-36 lg:gap-52 lg:flex-row container mx-auto px-clamp-15-5-40 border-y-gray-400 border-y'>
+            <div className='flex flex-col py-clamp-15-5-40 gap-12  md:gap-36 lg:gap-52 lg:flex-row container mx-auto px-clamp-15-5-40 border-y-gray-400 border-y'>
                 <div className='grid grow  gap-12'>
                     <div className='flex lg:flex-col  flex-wrap justify-between gap-24 '>
                         <div className ='min-w-24'>
