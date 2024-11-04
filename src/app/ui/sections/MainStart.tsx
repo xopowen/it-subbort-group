@@ -3,7 +3,7 @@ import ButtonRounded from "@/components/ButtonRounded";
 export default function MainStart(){
 
     return <section className='main-section  flex
-    pt-[30%]
+    pt-[40%]
     bg-cover
     flex-col
     relative z-0
